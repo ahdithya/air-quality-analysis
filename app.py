@@ -113,11 +113,6 @@ with tab3:
     plot_pollutant_day(df, selected_pollutant)
 
 
-st.sidebar.header("Station List")
-# station
-stations = df["station"].unique().tolist()
-selected_station = st.sidebar.selectbox("Select Station", stations)
-
 # Header
 st.header("Perbandingan parameter kualitas udara tiap Station")
 
