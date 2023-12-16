@@ -5,7 +5,10 @@ import streamlit as st
 # from babel.numbers import format_currency
 
 sns.set(style="dark")
-
+st.set_page_config(
+    page_title="Dashboard Air Quality",
+    # page_icon="🌬️",
+)
 # Load data
 df = pd.read_csv("cleaned_data.csv")
 
