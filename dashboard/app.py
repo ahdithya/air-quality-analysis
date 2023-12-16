@@ -7,7 +7,7 @@ import streamlit as st
 sns.set(style="dark")
 st.set_page_config(
     page_title="Dashboard Air Quality",
-    # page_icon="🌬️",
+    page_icon="✨",
 )
 # Load data
 df = pd.read_csv("cleaned_data.csv")
