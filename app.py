@@ -40,7 +40,7 @@ def plot_pollutant_month(data, pollutant):
     )
     fig, ax = plt.subplots(figsize=(15, 5))
     sns.lineplot(x="month", y=pollutant, data=df)
-    plt.title(f"{pollutant} Trend Over Years")
+    plt.title(f"{pollutant} Trend Over Month")
     plt.xlabel("Month")
     plt.ylabel(f"{pollutant} Concentration")
     st.pyplot(fig)  # Menampilkan plot di Streamlit
@@ -56,7 +56,7 @@ def plot_pollutant_day(data, pollutant):
     )
     fig, ax = plt.subplots(figsize=(15, 5))
     sns.lineplot(x="day", y=pollutant, data=df)
-    plt.title(f"{pollutant} Trend Over Years")
+    plt.title(f"{pollutant} Trend Over Day")
     plt.xlabel("Year")
     plt.ylabel(f"{pollutant} Concentration")
     st.pyplot(fig)  # Menampilkan plot di Streamlit
