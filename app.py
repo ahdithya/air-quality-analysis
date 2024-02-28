@@ -72,7 +72,7 @@ def plot_station_comparison(data, pollutant):
         .sort_values(by=pollutant, ascending=False)
     )
     fig, ax = plt.subplots(figsize=(15, 8))
-    sns.barplot(x=pollutant, y="station", data=data_grouped,  pallete=colors )
+    sns.barplot(x=pollutant, y="station", data=data_grouped, palette=colors)
     plt.title(f"Average {pollutant} Concentration by Station")
     plt.xlabel(f"{pollutant} Concentration")
     plt.ylabel("Station")
